@@ -1,63 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Lato:wght@400;700&display=swap');
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html, body, div, h1, h2, p, img, label, form, footer, header, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 body {
 	line-height: 1.1;
 	font-family: 'Lato', sans-serif;
 }
-
-
-/* .container {
-	max-width: 1200px;
-	margin: auto;
-} */
 
 nav {
 	padding: 0 25px;
@@ -68,17 +21,17 @@ nav {
 }
 
 nav img {
-	height: 75px;
+	height: 100px;
 }
 
 nav button {
-	font-size: 10px;
+	font-size: 14px;
 	text-transform: uppercase;
 	background-color: #2a79ec;
 	border: none;
 	color: white;
-	padding: 8px 20px;
-	border-radius: 20px;
+    padding: 12px 25px;
+	border-radius: 40px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -86,73 +39,91 @@ nav button {
 
 header {
 	background-color: #ebf4ff;
-	padding: 75px;
+    padding: 45px 20px 45px 20px ;
+    
 }
 
 header h1 {
-	font-size: 28px;
+    font-size: 45px;
+    text-align: center;
 }
 
 header .header-description {
-	font-size: 14px;
-	margin: 15px 0;
-	width: 50%;
+    font-size: 20px;
+	margin: 25px 0;
+    width: 100%;
 	line-height: 1.3;
+    text-align: center;
 }
 
 .section-container {
-	margin: 75px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 50px;
-	align-items: center;
+    margin: 25px 25px 10px 25px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
-.section-container h2 {
-	font-size: 26px;
-	margin-bottom: 20px;
-	line-height: 1.1;
+.marketing-team {
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 .section-container img {
 	width: 100%;
 }
 
+.image-holder-tools {
+    padding-top: 20px;
+}
+
+.section-container h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin: 20px 0 ;
+    line-height: 1.1;
+}
+
 .section-description {
-	font-size: 15px;
-	line-height: 1.3;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.marketing-team p {
+    margin-bottom: 35px;
 }
 
 footer {
 	background-color: #13459e;
 	color: white;
-	padding: 75px;
+	padding: 75px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
+
+
 
 footer h2 {
 	text-align: center;
-	font-size: 22px;
+    font-size: 38px;
 }
+
 
 footer button {
 	margin-top: 24px;
-	font-size: 10px;
+    font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	background-color: #f7be3c;
 	color: #13459e;
 	border: none;
-	padding: 8px 20px;
-	border-radius: 20px;
+    padding: 12px 25px;
+	border-radius: 40px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 }
-
 
 .modal {
     display: none; 
@@ -167,7 +138,6 @@ footer button {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
@@ -176,7 +146,6 @@ footer button {
     width: 80%; 
   }
   
-  /* The Close Button */
   .close {
     color: #aaa;
     float: right;
@@ -204,7 +173,6 @@ footer button {
   .modal-content form button {
       align-self: center;
       margin-top: 10px;
-
       font-size: 10px;
       text-transform: uppercase;
       background-color: #2a79ec;
@@ -217,76 +185,80 @@ footer button {
       display: inline-block;
   }
 
- /* Media Query for Mobile Devices */
- @media only screen and (max-width: 768px){
+
+  @media only screen and (min-width: 768px) {
+
+      nav img {
+        height: 75px;
+      }
+
+      nav button {
+        font-size: 10px;
+        padding: 8px 20px;
+        border-radius: 20px;
+    }
+
+    header {
+        padding: 75px;
+    }
 
 
-	header {
-		padding: 45px;
-	}
+    header h1 {
+        font-size: 28px;
+        text-align: left;
+    }
 
-	header h1 {
-		font-size: 42px;
-		text-align: center;
-	}
+    header .header-description {
+        font-size: 14px;
+        margin: 15px 0;
+        width: 50%;
+        line-height: 1.4;
+        text-align: left;
+    }
 
-	header .header-description {
-		font-size: 22px;
-		margin: 15px 0;
-		width: 100%;
-		line-height: 1.3;
-		text-align: center;
-	}
+    .section-container {
+        margin: 75px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+    }
 
-	.section-container {
-		margin: 50px 25px;
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: center;
-	}
+    .section-container h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
 
-	.section-container h2 {
-		font-size: 38px;
-		font-weight: 400;
-		margin-bottom: 20px;
-		line-height: 1.1;
-	}
+    .section-description {
+        font-size: 15px;
+        text-align: left;
+        line-height: 1.4;
+    }
 
-	.section-description {
-		font-size: 19px;
-		line-height: 1.3;
-		text-align: center;
-	}
+    footer h2 {
+        font-size: 22px;
+    }
 
-	footer h2 {
-		font-size: 38px;
-	}
+    footer button {
+        font-size: 10px;
+        padding: 8px 20px;
+        border-radius: 20px;
+    }
 
-	footer button {
-		margin-top: 24px;
-		font-size: 14px;
-		font-weight: 700;
-		text-transform: uppercase;
-		background-color: #f7be3c;
-		color: #13459e;
-		border: none;
-		padding: 12px 30px;
-		border-radius: 20px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-	}
+    .modal-content {
+		width: 60%; 
+	  }
 
-}
+  }
 
-/* Media Query for Large screens */
-@media screen and (min-width: 1280px)   {
+  @media only screen and (min-width: 1200px) {
 
-    .container {
+      .container {
         max-width: 1200px;
 		margin: auto;
     }
 	.modal-content {
 		width: 50%; 
 	  }
- }
+  }
