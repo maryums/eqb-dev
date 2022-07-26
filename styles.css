@@ -96,7 +96,7 @@ header .header-description {
 footer {
 	background-color: #13459e;
 	color: white;
-	padding: 75px 0;
+	padding: 75px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
